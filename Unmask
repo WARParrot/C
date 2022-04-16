@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int a = 92;
+    int b = 63;
+    int c = 70;
+    int d = 139;
+    int a1 = 255;
+    int b1 = 255;
+    int c1 = 255;
+    int d1 = 254;
+    int j = a&a1;
+    int k = b&b1;
+    int l = c&c1;
+    int m = d&d1;
+    printf("%d.%d.%d.%d\n", j, k, l, m);
+}
