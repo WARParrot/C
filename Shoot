@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    float x, y;
+    scanf("%f %f", &x, &y);
+    if (y >= -2 && y <= 0 && x == -2 - y) {
+        printf("YES");
+    }
+    else if 
+}
