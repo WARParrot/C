@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main() {
+    int x1, y1, z1, x2, y2, z2, b;
+    scanf("%d %d %d\n%d %d %d", &x1, &y1, &z1, &x2, &y2, &z2);
+
+    if (y1 > z1) {
+        b = y1;
+        y1 = z1;
+        z1 = b;
+    }
+    if (x1 > z1) {
+        b = x1;
+        x1 = z1;
+        z1 = b;
+    }
+    if (x1 > y1) {
+        b = x1;
+        x1 = y1;
+        y1 = b;
+    }
+    
+    if (y2 > z2) {
+        b = y2;
+        y2 = z2;
+        z2 = b;
+    }
+    if (x2 > z2) {
+        b = x2;
+        x2 = z2;
+        z2 = b;
+    }
+    if (x2 > y2) {
+        b = x1;
+        x2 = y2;
+        y2 = b;
+    }
+    if (x1 >= x2) {
+        if (y1 >= y2) {
+            if (z1 >= z2) {
+            printf("YES");
+            }
+        }
+    }
+    else {
+    printf("NO");
+    }
+}
