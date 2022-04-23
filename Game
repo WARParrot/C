@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <time.h>
+
+int main() {
+    srand(time(NULL));
+    int num = rand() % 100 + 1;
+    int sug;
+    int win = 0;
+    while (win == 0) {
+        printf("Введите число от 1 до 100: ");
+        scanf("%d", &sug);
+    
+        if (sug > 100 || sug < 1) {
+        printf("Неправильный ввод!\n");
+        }
+        else if (sug == num) {
+        printf("Победа!\n");
+        win = 1;
+        }
+        else if (sug > num) {
+        printf("Меньше\n");
+        }
+        else {
+        printf("Больше\n");
+    }
+    }
+}
