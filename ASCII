@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    int a = 33;
+    while (a <= 126) {
+    printf("%d | %c\n", a, a);
+    a += 1;
+    }
+}
