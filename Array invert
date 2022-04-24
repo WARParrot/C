@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+    const int N = 10;
+    int a[N];
+    scanf ("%d %d %d %d %d %d %d %d %d %d", &a[N-10], &a[N-9], &a[N-8], &a[N-7], &a[N-6], &a[N-5], &a[N-4], &a[N-3], &a[N-2], &a[N-1]);
+    printf ("%d %d %d %d %d %d %d %d %d %d", a[N-1], a[N-2], a[N-3], a[N-4], a[N-5], a[N-6], a[N-7], a[N-8], a[N-9], a[N-10]);
+}
