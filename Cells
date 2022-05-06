@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    const int n = 5;
+    int a[n];
+    int x = 0;
+    
+    while (x < 5) {
+        if (x = n / 2 + 1) {
+            a[x] = " ";
+            x += 1;
+        }
+        else {
+            a[x] = "#";
+            x += 1;
+        }
+    }
+    
+    x = 0;
+    while (x < 5) {
+        printf("%c\n", a[x]);
+        x += 1;
+    }
+}
