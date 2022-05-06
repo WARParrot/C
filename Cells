@@ -2,7 +2,7 @@
 
 int main() {
     const int n = 5;
-    int a[n];
+    char a[n];
     int x = 0;
     
     while (x < 5) {
