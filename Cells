@@ -10,6 +10,7 @@ int main() {
     int num;
     int* a = A;
     int* b = B;
+    int* c;
     
     while (x < n) {
         if (x == n / 2) {
@@ -47,7 +48,9 @@ int main() {
            y += 1;
         }
         
-    
+        a = c;
+        a = b;
+        b = c;
         f += 1;
     }
 }
