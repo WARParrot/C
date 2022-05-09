@@ -5,7 +5,7 @@ int main() {
     int A[n], B[n];
     int x = 0;
     int y = 1;
-    int f = 0;
+    int f = 1;
     const int rule = 30;
     int num;
     int* a = A;
@@ -15,14 +15,12 @@ int main() {
     while (x < n) {
         if (x == n / 2) {
             A[x] = 1;
-            printf("%d", A[x]);
-            x += 1;
         }
         else {
             A[x] = 0;
-            printf("%d", A[x]);
-            x += 1;
         }
+        printf("%d", A[x]);
+        x += 1;
     }
     x = 0;
     
@@ -31,11 +29,13 @@ int main() {
         x += 1;
     }
     
-    while (f < 5) {
+    while (f < n) {
         printf("\n");
-        while (&x != &A[n]) {
-            int* x = &A[y];
-            if (*x == 1) {
+        y = 0;
+        int* x = &a[y];
+        while (x == &a[n]) {
+            int* x = &a[y];
+            if ((*x == 1) || ((*x + 1) == 1) || ((*x - 1) == 1)) {
                 num = (a[*x-1]<<2) + (a[*x]<<1) + a[*x+1];
                 b[*x] = (rule >> num) & 1;
             }
@@ -48,9 +48,9 @@ int main() {
            y += 1;
         }
         
-        a = c;
-        a = b;
-        b = c;
+        *a = *c;
+        *a = *b;
+        *b = *c;
         f += 1;
     }
 }
