@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    const int n = 9;
+    const int n = 31;
     int A[n], B[n];
     int x = 0;
     int f = 1;
